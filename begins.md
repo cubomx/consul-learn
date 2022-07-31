@@ -27,5 +27,4 @@ Get all services that are healthy:
 curl http://localhost:8500/v1/catalog/service/<ServiceName>?passing
 ```
 
-## Service Discovery
-**DNS interface** that downstream services; 
+

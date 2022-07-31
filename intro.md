@@ -66,8 +66,9 @@ Supported & owned by the proxies. Proxy are in charge of:
 - Receive traffic & direct this traffic back to the application
 
 The **client** keeps the proxy *up-to-date* with info about the SM:
-- Service discovery: Service's availability
-- Service mesh: if app can communicate with others
+- Service discovery: Service's availability (health checks)
+- Service mesh: if app can communicate with others (queries to servers)
 
 ## Installation
 [Consul](https://learn.hashicorp.com/tutorials/consul/get-started-install?in=consul/getting-started)
+
