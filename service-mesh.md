@@ -46,3 +46,13 @@ List all services registered:
 ```sh
 consul catalog services
 ```
+
+## Proxy
+Install envoy, in Mac using Homebrew:
+```sh
+brew install envoy
+```
+
+Connect & start **Envoy sidcecar proxy**:
+```sh
+consul connect envoy -sidecar-for <IdService> > <FileToSaveLogs>.log

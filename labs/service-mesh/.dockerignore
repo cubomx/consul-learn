@@ -1,0 +1,3 @@
+Dockerfile
+*darwin_amd64
+.dockerignore
