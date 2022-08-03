@@ -4,6 +4,15 @@ The 3 ways to use it are:
 - Consul KV CLI
 - Consul Web UI
 
+It is a core feature. To store indexed objects, mian uses are storing:
+- Parameters
+- Metadata
+
+The datastore is located on the servers. Accesed by both clients & servers. Replicated 
+data. The **maximum size of an object is 512KB**. Avoid use `*?'%`. 
+
+
+
 ## Get
 To get the value of some path:
 ```sh
@@ -54,3 +63,25 @@ Delete all values in a non-leaf path:
 ```sh
 consul kv delete -recurse <Path>
 ```
+
+## Extending
+### [Watches](https://www.consul.io/docs/dynamic-app-config/watches)
+Monitor data for updates. An external hanlder is invoked (executable, HTTP endpoint).
+
+You can use files or the CLI
+```sh
+consul watch -type=<Type> ... <Args>
+```
+
+Types:
+- `key`
+- `keyprefix`
+- `services`
+- `nodes`
+- `service`
+- `checks`
+- `event`
+
+### Consul Sessions
+Build distributed locks with Consul KV. They act as a binding layer between nodes, 
+health checks, and KV data. Supports `acquire`, `release` operation.

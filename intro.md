@@ -1,6 +1,6 @@
 # Consul
 
-## Service Mesh
+## [Service Mesh](https://learn.hashicorp.com/tutorials/consul/service-mesh)
 Dedicated layer that **provides service-to-service communication** for:
 - On-premises
 - Cloud

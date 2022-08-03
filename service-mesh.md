@@ -1,7 +1,13 @@
 # Service Mesh
-It **secures** service-to-service communication with: 
+It is a dedicated layer that provides **secures** service-to-service communication 
+with: 
 - **Authorization**
 - **Encryption**
+
+For:
+- On-premises
+- Cloud
+- Multi-cloud
 
 Apps can use **sidecar proxies** to auto-establish *TLS* (in, out conns) without be aware of net 
 config & topology.
@@ -56,3 +62,11 @@ brew install envoy
 Connect & start **Envoy sidcecar proxy**:
 ```sh
 consul connect envoy -sidecar-for <IdService> > <FileToSaveLogs>.log
+```
+
+## Service Definition files
+You can also run the agent and load the definition files (HCL, JSON) by:
+- `-config-file` and adding individual files
+- `-config-dir`, specifying the directory
+
+You can use `consul reload` to check for new service definitions or to update.

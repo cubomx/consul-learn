@@ -60,3 +60,4 @@ You will need to reload the configuration:
 ```sh
 consul reload
 ```
+
