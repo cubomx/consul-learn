@@ -61,7 +61,7 @@ checks:
 You need the following permission for ACL:
 | resource | segment | permission | 
 | -------- | ------- | ---------- |
-| `acl` | | w |
+| `acl` | | write |
 | `key` | `\<lock key>` | write |
 | `session` | `\<session>` | write |
 | `service` | `\<service name>`| write |

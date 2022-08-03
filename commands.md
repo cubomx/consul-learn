@@ -72,6 +72,12 @@ Generate node token with the policy:
 consul acl token create - token=<Token> -description <Description> -policy-name <PolicyName>
 ```
 
+## `consul validate`
+Validate syntax (HCL, JSON):
+```sh
+consul validate
+```
+
 ## All cmds
 View all the [commands](https://www.consul.io/commands)
 
