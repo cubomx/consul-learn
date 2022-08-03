@@ -2,7 +2,7 @@
 HCP -> HashiCorp Cloud Platform
 
 ## Multi-Tenancy
-**[Admin Partitions](https://www.consul.io/docs/enterprise/admin-partitions) (HCP 1.11.0+)**: define administrative boundaries between tenants within a single
+**[Admin Partitions](https://www.consul.io/docs/enterprise/admin-partitions) (HCP, 1.11.0+)**: define administrative boundaries between tenants within a single
 Consul datacenter for services managed by separate teams/stakeholders. They exist 
 above **namespaces** in the identity hierarchy. Contain 1+ namespaces. It allows 
 multiple independent tenants to **share a Consul server cluster**. 

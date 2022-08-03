@@ -3,7 +3,9 @@
 ## Gossip Encryption
 You just need to set an encryption key (startup, `encrypt`). If using WAN Joined DCs use the same
 key. Must be 32-bytes, base64 encoded. You can use the `consul keygen` command. Gossip secures 
-between nodes over UDP. Symmetric key.
+between nodes over UDP. Symmetric key. Shared secret.
+
+To enable gossip encryption you should include the `encrypt` parameter
 
 If the agents are already running, `consul reload` is not sufficient to change the gossip config.
 

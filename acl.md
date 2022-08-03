@@ -52,6 +52,15 @@ consul acl policy create -name "<NamePolicy>" -description "<Description>" -rule
 Core auth method. The most important attribute is `SecretID` (ACL Token). `AccesorID` may be used
 for audit logging.
 
+In a HTTP request it should be included with:
+- `Authorization: Bearer`
+- `X-Consul-Token`
+
+## Bootstrapping
+Two tokens are created:
+- **Master**: built-in global management
+- **Anonymous**: used when a request is made to Consul without specifying a bearer token
+
 ## [Roles](https://www.consul.io/docs/security/acl/acl-roles)
 Collection of policies. It can be linked to a token. Reuse policies.
 
