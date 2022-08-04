@@ -52,7 +52,7 @@ Connected set of nodes running Consul are called *datacenter*. It will have 3 to
 
 **Consul agent** (node) runs the binary. Two modes: *server* or *client*. **Server agents** maintain a *consistent state* for Consul. The responsibilites are:
 - Keep track of **available services**, their IP addresses and their current health and status
-- Keep track of **availale nodes**, their IP addresses and " "
+- Keep track of **available nodes**, their IP addresses and " "
 - Build a **service catalog** (DNS), aware of the service & nodes availability
 - Maintain & update the **K/V store**
 - **Communicate updates** to all agents (gossip protocol)

@@ -56,10 +56,17 @@ In a HTTP request it should be included with:
 - `Authorization: Bearer`
 - `X-Consul-Token`
 
+In CLI:
+- Flag `-token`
+- Set the env variable `CONSUL_HTTP_TOKEN`
+
 ## Bootstrapping
 Two tokens are created:
-- **Master**: built-in global management
+- **Master/Initial Management**: built-in global management
 - **Anonymous**: used when a request is made to Consul without specifying a bearer token
+  - Used by clients not specifying a token
+  - Cannot be deleted
+  - Policy can be updated
 
 ## [Roles](https://www.consul.io/docs/security/acl/acl-roles)
 Collection of policies. It can be linked to a token. Reuse policies.

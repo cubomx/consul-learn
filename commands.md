@@ -78,6 +78,10 @@ Validate syntax (HCL, JSON):
 consul validate
 ```
 
+## `consul event`
+Mechanism to fire a custom user event to an entire DC. Handled by a **watch**. Propagated using the
+**gossip protocol**.
+
 ## All cmds
 View all the [commands](https://www.consul.io/commands)
 

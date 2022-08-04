@@ -82,6 +82,9 @@ Types:
 - `checks`
 - `event`
 
+A new configuration (adding a new Watch to a configuration file) just needs to use `consul reload` 
+to load it.
+
 ### Consul Sessions
 Build distributed locks with Consul KV. They act as a binding layer between nodes, 
 health checks, and KV data. Supports `acquire`, `release` operation.
