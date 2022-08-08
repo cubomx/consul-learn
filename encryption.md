@@ -15,6 +15,8 @@ are:
 - Retiring old encryption keys
 - Changing the keys used by the agents
 
+To enable federation between datacenters, the gossip keys must match.
+
 Add new key:
 ```sh
 consul keyring -install <Key>

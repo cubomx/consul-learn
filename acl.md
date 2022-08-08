@@ -58,7 +58,10 @@ In a HTTP request it should be included with:
 
 In CLI:
 - Flag `-token`
+- Flag `-token-file` with value to the path of the file containing the token
 - Set the env variable `CONSUL_HTTP_TOKEN`
+- Set the env variable `CONSUL_HTTP_TOKEN_FILE` assigned to a file containing the token
+
 
 ## Bootstrapping
 Two tokens are created:

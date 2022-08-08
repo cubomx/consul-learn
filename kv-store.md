@@ -4,6 +4,8 @@ The 3 ways to use it are:
 - Consul KV CLI
 - Consul Web UI
 
+When using the API, 
+
 It is a core feature. To store indexed objects, mian uses are storing:
 - Parameters
 - Metadata
@@ -77,10 +79,10 @@ Types:
 - `key`
 - `keyprefix`
 - `services`
-- `nodes`
+- `nodes` (list of nodes)
 - `service`
-- `checks`
-- `event`
+- `checks` (value of health checks)
+- `event` (user events)
 
 A new configuration (adding a new Watch to a configuration file) just needs to use `consul reload` 
 to load it.

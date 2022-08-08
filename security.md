@@ -6,7 +6,7 @@ You must have (generally):
 - **mTLS**: mutual authentication for both the TLS server & client x509 certificates to prevent
 internal abuse
 - **ACLs**: RBACs for authenticated conns by granting capabilities via an ACL token to
-authroize actions within a cluster to (def):
+authorize actions within a cluster to (def):
     - Human
     - Machine operator identity
 - **Namespaces (E, HCP)**: `rw` operations can be scoped to restrict access to Consul components

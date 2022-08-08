@@ -1,5 +1,8 @@
 # Fun Facts
 - Consul Template & Envoy Consul does not need a cluster to operate.
+- `envconsul`
+    - Protect sensitive data
+    - Programatically set environment variables
 - Non-voting member does not participate in raft quorum, can be automatically promoted to voting
 member, still receives replicated data.
 - CA: built-in Consul CA, Vault, AWS ACM Private CA
@@ -13,6 +16,10 @@ member, still receives replicated data.
 - If you get info about a cluster without using a token, the 2 reasons are:
     - Token already set using the `CONSUL_HTTP_TOKEN` env variable
     - Anonymous token permits this
+- To see if a intention is configured from a service to another:
+    - `consul intention check <Service1> <Service2>`
+    - `consul intention match -source <SourceAp>` (all intention to others)
+- Upstream services are those in which a service/app depends on
 
 ## Scripting
 This is a prepared query, so to access the service by the next configuration:

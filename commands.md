@@ -46,6 +46,10 @@ Sanity check. Used for:
 Create encryption key,
 
 ## `consul tls`
+It can create the next 3 types of certificates:
+- server
+- client
+- cli
 Create a CA for your certificates:
 ```sh
 consul tls ca create

@@ -70,3 +70,6 @@ You can also run the agent and load the definition files (HCL, JSON) by:
 - `-config-dir`, specifying the directory
 
 You can use `consul reload` to check for new service definitions or to update.
+
+You can register multiple times the service. But, you need to specify the ID parameter because it is
+unique.

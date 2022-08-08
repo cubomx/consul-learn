@@ -31,7 +31,7 @@ Uses:
 - `ui_config.enabled`
 - `tls`
 
-## [Consul Template](https://learn.hashicorp.com/tutorials/consul/consul-template)
+## [Consul Template](https://github.com/hashicorp/consul-template/blob/main/docs/templating-language.md)
 Programmatic method for rendering config files from a variety of locations (also 
 Consul KV). Not core feature. Use cases:
 - **Update config files**: e. g. managing LBs

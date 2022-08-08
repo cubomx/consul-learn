@@ -1,10 +1,15 @@
 # Backup
 
 ## Consul Snapshot (Consul 0.7.1+)
+Restrictions in OSS:
+- Not agent
+- Not remote storage
 `consul snapshot` command has subcommands for:
 - Saving
 - Restoring
 - Inspecting
+
+**IT NEEDS AN TOKEN IF ACLs ARE ENABLED**
 
 Include:
 - KV entries
@@ -16,6 +21,13 @@ Include:
 Access:
 - CLI
 - HTTP API
+
+Remote storages:
+- Amazon S3
+- Any S3-compatible
+- Google Cloud Storage
+- Azure Blob Storage
+- local filesystem
 
 Create a snapshot and save it:
 ```sh

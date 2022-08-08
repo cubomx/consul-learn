@@ -21,6 +21,10 @@ It is the control plane of the SM. Multi-net tool that offers a fully-featured S
 - Retries
 - Network observability
 
+How to participate (apps):
+- Sidecar proxy
+- Native app integration
+
 You can use it with (it is platform):
 - VMs
 - Containers
@@ -40,6 +44,11 @@ Pillars of Service Mesh (SM):
 - Discovery
 - Configuration
 - Segmentation
+
+You must enable:
+- Gossip encryption
+- ACLs
+- Service Mesh (connect)
 
 ## Architecture
 It is a distributed system designed to run on a **cluster of nodes**. Each node may be:
